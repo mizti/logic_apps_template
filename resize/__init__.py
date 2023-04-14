@@ -11,8 +11,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     img = Image.open(io.BytesIO(image_binary))
 
     # Process image here
-    processed_img = img.transpose(Image.FLIP_LEFT_RIGHT)
-
+    new_width = img.width // 2
+    new_height = img.height
+    processed_img = img.resize((new_width, new_height), Image.ANTIALIAS)
+  
     # Save image
     png_binary = io.BytesIO()
     processed_img.save(png_binary, 'PNG')
