@@ -1,6 +1,6 @@
 # 本リポジトリの内容について
 
-Logic AppsからFunctionsを呼び出して利用するのFunctionsのサンプル実装です
+Azure Logic AppsからAzure Functionsを呼び出して利用するためのFunctionsのサンプル実装です
 
 # 内容説明
 
