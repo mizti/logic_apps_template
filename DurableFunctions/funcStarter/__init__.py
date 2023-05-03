@@ -18,3 +18,4 @@ async def main(req: func.HttpRequest, starter: str) -> func.HttpResponse:
     logging.info(f"Started orchestration with ID = '{instance_id}'.")
 
     return client.create_check_status_response(req, instance_id)
+
